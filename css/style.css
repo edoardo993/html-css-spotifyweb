@@ -88,6 +88,9 @@ body {
   width: calc(100% - 230px);
   background: rgba(0,0,0,.5);
   height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .upgrade a {
@@ -95,8 +98,8 @@ body {
   text-decoration: none;
   color: #fff;
   border-radius: 50px;
-  padding: 10px 30px;
-  font-weight: bold;
+  padding: 15px 60px;
+  font-weight: bold
 }
 
 .text-center li {
@@ -106,10 +109,71 @@ body {
 }
 
 .main-nav-right {
-  margin-top: 90px
+  margin-top: 110px
+}
+
+.main-nav-right li {
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #66686D
 }
 
 footer {
   height: 90px;
   background: #242424
+}
+
+.played {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0
+}
+
+.album-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0
+}
+
+.album {
+  display: inline-block;
+  width: 150px;
+}
+
+.album img {
+  height: 150px
+}
+
+.album h4, .album h5 {
+  text-align: center;
+}
+
+.album h4 {
+  color: #fff;
+  margin: 8px 0;
+  font-size: 12px
+}
+
+.album h5 {
+  color: #5E6165;
+  font-size: 9px
+}
+
+.daily-mix img {
+  height: 150px
+}
+
+.mix-title {
+  padding: 0 20px;
+  color: #fff
+}
+
+.daily-mix {
+  display: inline-block;
+}
+
+.daily-album {
+  display: flex;
+  justify-content: space-around;
 }
