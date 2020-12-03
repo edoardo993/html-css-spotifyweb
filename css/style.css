@@ -46,162 +46,70 @@ body {
 }
 /* end utility classes */
 
-.container {
-  height: 100%
+.flex-container ul {
+  justify-content: space-between;
 }
 
-.sidebar {
-  background-color: #000;
-  color: #666666;
-  padding: 10px 10px;
+.total-content {
+  height: calc(100% - 90px);
+  background: #ccc
+}
+
+.main-nav {
+  width: 230px;
   height: 100%;
-  width: 200px;
-  position: fixed;
+  overflow-y: hidden;
+  background: #000
 }
 
-.logo {
-  width: 130px
+.main-nav ul li:first-child img {
+  height: 50px
 }
 
-.gr-txt {
-  color: #666666
-}
-
-.playlist {
-  margin: 20px 0
-}
-
-.second-content li {
-  list-style-type: none;
-  padding: 8px 0
-}
-
-.first-content div, .second-content img {
-  margin: 20px 0
-}
-
-.sidebar-content img, .second-content img {
-  height: 20px
-}
-
-.sidebar-content span {
-  vertical-align: middle;
-}
-
-.home img {
-  vertical-align: middle;
-}
-.second-content {
-  overflow-y: auto;
-}
-
-.first-flex div {
-  margin: 10px 0
-}
-
-.app-install {
-  border-bottom: 2px solid #666666;
-  width: 180px;
-  padding: 10px 0;
-  margin: 10px 0
-}
-
-.plus-icon {
+.main-nav img {
   height: 30px
 }
 
-.upgrade-nav {
-  width: calc(100% - 200px);
-  position: fixed;
-  /* top: 0; */
-  z-index: 100;
-  height: 80px;
-  background: #090E13
+.main-nav ul li {
+  color: #ccc;
+  padding: 6px 0;
+  list-style-type: none
 }
 
-.ep-main-content {
-  width: calc(100% - 200px);
-  height: calc(100% - 400px);
+.content {
+  width: calc(100% - 230px);
+  overflow-y: auto;
   background: #141922;
-  height: 100%;
-  position: relative;
+  height: 100%
 }
 
-.second-flex {
-  padding-top: 10px
+.upgrade {
+  position: fixed;
+  width: calc(100% - 230px);
+  background: rgba(0,0,0,.5);
+  height: 90px;
 }
 
-.upgrade-nav button {
-  border-radius: 20px;
-  padding: 8px 50px;
-  background: none;
-  border: 1px solid #fff;
-  margin: 20px 0;
+.upgrade a {
+  border: 1px solid #ccc;
+  text-decoration: none;
   color: #fff;
-  font-size: 13px
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
 }
 
-.nav-music {
-  padding-top: 15px;
-  padding-bottom: 25px
-}
-
-.nav-music ul li {
+.text-center li {
   list-style-type: none;
   display: inline-block;
-  font-size: 10px;
-  color: #6B6D72;
-  font-weight: bold;
-  padding: 0 10px
+  color: #ccc
 }
 
-.album {
-  display: inline-block;
-  width: 120px
-}
-
-.album img {
-  height: 120px
-}
-
-.first-flex-container {
-  justify-content: space-between;
-  padding: 0 30px;
-  height: 250px
-}
-
-.album h4, .album h5 {
-  text-align: center;
-}
-
-.album h4 {
-  color: #fff;
-  margin: 8px 0;
-  font-size: 12px
-}
-
-.album h5 {
-  color: #5E6165;
-  font-size: 9px
-}
-
-.daily-mix img {
-  height: 120px
-}
-
-.p-l h3 {
-  margin-top: 20px
-}
-
-.scroll {
-  overflow-y: auto;
-  height: calc(100% - 80px);
-  margin-top: 80px
+.main-nav-right {
+  margin-top: 90px
 }
 
 footer {
-  height: 80px;
-  background: #242424;
-  position: fixed;
-  z-index: 101
+  height: 90px;
+  background: #242424
 }
