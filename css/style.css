@@ -1,0 +1,207 @@
+/* utility classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%
+}
+
+.p-l {
+  padding-left: 30px
+}
+
+.flex-container {
+  display: flex
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-uppercase {
+  text-transform: uppercase
+}
+
+.text-center {
+  text-align: center
+}
+/* end utility classes */
+
+.container {
+  height: 100%
+}
+
+.sidebar {
+  background-color: #000;
+  color: #666666;
+  padding: 10px 10px;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+}
+
+.logo {
+  width: 130px
+}
+
+.gr-txt {
+  color: #666666
+}
+
+.playlist {
+  margin: 20px 0
+}
+
+.second-content li {
+  list-style-type: none;
+  padding: 8px 0
+}
+
+.first-content div, .second-content img {
+  margin: 20px 0
+}
+
+.sidebar-content img, .second-content img {
+  height: 20px
+}
+
+.sidebar-content span {
+  vertical-align: middle;
+}
+
+.home img {
+  vertical-align: middle;
+}
+.second-content {
+  overflow-y: auto;
+}
+
+.first-flex div {
+  margin: 10px 0
+}
+
+.app-install {
+  border-bottom: 2px solid #666666;
+  width: 180px;
+  padding: 10px 0;
+  margin: 10px 0
+}
+
+.plus-icon {
+  height: 30px
+}
+
+.upgrade-nav {
+  width: calc(100% - 200px);
+  position: fixed;
+  /* top: 0; */
+  z-index: 100;
+  height: 80px;
+  background: #090E13
+}
+
+.ep-main-content {
+  width: calc(100% - 200px);
+  height: calc(100% - 400px);
+  background: #141922;
+  height: 100%;
+  position: relative;
+}
+
+.second-flex {
+  padding-top: 10px
+}
+
+.upgrade-nav button {
+  border-radius: 20px;
+  padding: 8px 50px;
+  background: none;
+  border: 1px solid #fff;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 13px
+}
+
+.nav-music {
+  padding-top: 15px;
+  padding-bottom: 25px
+}
+
+.nav-music ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 10px;
+  color: #6B6D72;
+  font-weight: bold;
+  padding: 0 10px
+}
+
+.album {
+  display: inline-block;
+  width: 120px
+}
+
+.album img {
+  height: 120px
+}
+
+.first-flex-container {
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 250px
+}
+
+.album h4, .album h5 {
+  text-align: center;
+}
+
+.album h4 {
+  color: #fff;
+  margin: 8px 0;
+  font-size: 12px
+}
+
+.album h5 {
+  color: #5E6165;
+  font-size: 9px
+}
+
+.daily-mix img {
+  height: 120px
+}
+
+.p-l h3 {
+  margin-top: 20px
+}
+
+.scroll {
+  overflow-y: auto;
+  height: calc(100% - 80px);
+  margin-top: 80px
+}
+
+footer {
+  height: 80px;
+  background: #242424;
+  position: fixed;
+  z-index: 101
+}
