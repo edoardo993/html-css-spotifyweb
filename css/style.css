@@ -85,6 +85,11 @@ a:hover {
   margin-top: 10px
 }
 
+.scroll-y ul {
+  height: 45vh;
+  overflow-y: auto
+}
+
 .main-nav img {
   height: 22px
 }
@@ -98,14 +103,13 @@ a:hover {
 .flex-container ul {
   justify-content: space-between;
 }
-
-.scroll-y {
-  min-height: 300px;
-  overflow-y: auto
-}
 /* end sidebar */
 
 /* right-content */
+.album .fa {
+  display: none
+}
+
 .content {
   width: calc(100% - 230px);
   overflow-y: auto;
@@ -181,7 +185,8 @@ a:hover {
   display: inline-block;
   width: calc(100%/6 - 10px);
   text-align: center;
-  margin: 0 5px
+  margin: 0 5px;
+  position: relative;
 }
 
 .album img {
