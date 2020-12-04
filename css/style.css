@@ -63,15 +63,12 @@ a:hover {
 }
 /* end utility classes */
 
-.flex-container ul {
-  justify-content: space-between;
-}
-
 .total-content {
   height: calc(100% - 90px);
   background: #ccc
 }
 
+/* sidebar */
 .main-nav {
   width: 230px;
   height: 100%;
@@ -98,16 +95,26 @@ a:hover {
   list-style-type: none
 }
 
+.flex-container ul {
+  justify-content: space-between;
+}
+
 .scroll-y {
   min-height: 50vh;
   overflow-y: auto
 }
+/* end sidebar */
 
+/* right-content */
 .content {
   width: calc(100% - 230px);
   overflow-y: auto;
   background: #141922;
   height: 100%
+}
+
+.content a:hover {
+  transform: scale(1.1);
 }
 
 .upgrade {
@@ -118,6 +125,7 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 20px
 }
 
 .upgrade a {
@@ -129,25 +137,20 @@ a:hover {
   font-weight: bold
 }
 
-.text-center li {
-  list-style-type: none;
-  display: inline-block;
-  color: #ccc
-}
-
 .main-nav-right {
   margin-top: 110px
 }
 
-.content a:hover {
-  transform: scale(1.1);
+.main-nav-right ul {
+  list-style-type: none
 }
 
 .main-nav-right li {
   padding: 0 10px;
   font-size: 12px;
   font-weight: bold;
-  color: #66686D
+  color: #66686D;
+  display: inline-block;
 }
 
 .main-nav-right a {
@@ -163,9 +166,10 @@ a:hover {
   color: #fff;
   font-size: 18px;
   margin: 20px 0;
-  padding-left: 5px
+  padding-left: 34px
 }
 
+/* album section */
 .album-container {
   display: flex;
   margin: 10px 0;
@@ -189,7 +193,7 @@ a:hover {
   text-align: center;
 }
 
-.album h4 {
+.album h4, .daily-mix h4 {
   color: #fff;
   margin: 8px 0;
   font-size: 12px
@@ -199,32 +203,43 @@ a:hover {
   color: #5E6165;
   font-size: 9px
 }
+/* end album section */
 
+/* second album section */
 .daily-mix img {
   width: 100%
+}
+
+.popular-artists img {
+  border-radius: 50%;
+  max-width: 300px
 }
 
 .mix-title {
   color: #fff
 }
 
-.daily-mix {
-  display: inline-block;
-  padding: 0 5px
-}
-
-.daily-album {
-  display: flex;
-  width: calc(100%/3 - 10px)
-}
-
-.mix-title h5 {
+.mix-title h5, .mix-title-2 h5 {
   font-size: 10px;
   color: #676A6E;
   padding-left: 5px;
   margin-bottom: 15px
 }
+/* end second album section */
 
+/* popular artists section */
+.daily-album {
+  display: flex;
+  text-align: center
+}
+
+.daily-mix {
+  display: inline-block;
+  padding: 0 5px;
+}
+/* end popular artists section */
+
+/* footer */
 footer {
   height: 90px;
   background: #242424;
@@ -232,6 +247,16 @@ footer {
   justify-content: space-between;
 }
 
+footer .fa, .text-player h5, .text-player h6 {
+  color: #fff
+}
+
+footer .fa, .player-right .fa {
+  padding: 0 10px
+}
+/* end footer */
+
+/* left part */
 .player-left img {
   height: 50px;
   vertical-align: middle
@@ -253,18 +278,24 @@ footer {
   display: inline-block;
 }
 
+.heart-folder-icons .fa {
+  color: #65686C
+}
+
+.heart-folder-icons .fa:hover {
+  color: #fff
+}
+/* end left part */
+
+/* central part */
 .central-player {
   text-align: center;
   display: inline-block;
   width: 60%
 }
 
-footer .fa, .text-player h5, .text-player h6 {
-  color: #fff
-}
-
-footer .fa, .player-right .fa {
-  padding: 0 10px
+.central-player div {
+  line-height: 40px
 }
 
 .play-pause i {
@@ -281,6 +312,16 @@ footer .fa, .player-right .fa {
   transform: scale(1.2);
 }
 
+.progressing-bar span {
+  color: #A9A9A9;
+  font-weight: bold;
+  font-size: 10px
+}
+
+.progressing-bar span:first-child {
+  padding-right: 10px
+}
+
 .music-playing {
   display: inline-block;
   vertical-align: middle;
@@ -292,13 +333,6 @@ footer .fa, .player-right .fa {
 
 .music-playing:hover .point {
   display: block;
-}
-
-.player-right {
-  display: inline-block;
-  line-height: 90px;
-  text-align: right;
-  padding-right: 20px
 }
 
 .progress-bar {
@@ -321,18 +355,17 @@ footer .fa, .player-right .fa {
   display: none
 }
 
-.progressing-bar span {
-  color: #A9A9A9;
-  font-weight: bold;
-  font-size: 10px
-}
-
-.progressing-bar span:first-child {
-  padding-right: 10px
-}
-
 .end-time {
   padding-left: 10px
+}
+/* end central part */
+
+/* right part */
+.player-right {
+  display: inline-block;
+  line-height: 90px;
+  text-align: right;
+  padding-right: 20px
 }
 
 .volume-bar {
@@ -341,28 +374,30 @@ footer .fa, .player-right .fa {
   width: 20%;
   height: 4px;
   border-radius: 8px;
-  background: #5a5a5a
-}
-
-.volume-now {
-  height: 4px;
-  background: #c1c1c1;
-  width: 20%;
-  border-radius: 8px;
-  position: relative;
+  background: #5A5A5A
 }
 
 .volume-bar:hover .point {
   display: block;
 }
 
-.central-player div {
-  line-height: 40px
+.volume-now {
+  height: 4px;
+  background: #C1C1C1;
+  width: 20%;
+  border-radius: 8px;
+  position: relative;
 }
-/* media query */
+/* end right part */
+
+/* media queries */
 @media screen and (max-width: 991px) {
   .album {
     width: calc((100% / 4) - 10px)
+  }
+
+  .daily-album {
+    width: calc(100%/4 - 10px)
   }
 }
 
@@ -370,11 +405,31 @@ footer .fa, .player-right .fa {
   .album {
     width: calc((100% / 2) - 10px)
   }
+
+  .daily-album {
+    width: calc(100%/2 - 10px)
+  }
 }
 
 @media screen and (max-width: 575px) {
   .album {
-    width: calc(100%/2 - 10px);
+    width: calc(100%/2 - 10px)
+  }
+
+  .daily-album {
+    width: calc(100%/2 - 10px)
+  }
+
+  .hidden-xs {
+    display: none
+  }
+
+  .main-nav-right {
+    margin-top: 20px
+  }
+
+  .main-nav-right li {
+    font-size: 10px
   }
 }
 

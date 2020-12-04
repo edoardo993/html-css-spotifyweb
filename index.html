@@ -10,9 +10,13 @@
     <title>SPOTIFY</title>
   </head>
   <body>
+    <!-- wrapper -->
     <div class="wrapper">
 
+      <!-- main content -->
       <div class="total-content">
+
+        <!-- sidebar -->
         <div class="main-nav fl">
           <div class="">
             <ul>
@@ -38,8 +42,11 @@
             <li><a href="#"><img class="v-a-m" src="img/profile.svg" alt=""><span class="v-a-m p-l-10">John Doe</span></a></li>
           </ul>
         </div>
+        <!-- end sidebar -->
+
+        <!-- right-content -->
         <div class="content fl">
-          <div class="upgrade"><a href="#" class="text-uppercase">Effettua l'upgrade</a></div>
+          <div class="upgrade hidden-xs"><a href="#" class="text-uppercase">Effettua l'upgrade</a></div>
           <div class="main-nav-right">
             <ul class="text-center text-uppercase">
               <li><a href="#">in evidenza</a></li>
@@ -51,6 +58,7 @@
             </ul>
           </div>
           <div class="played"><h3 class="">Recently played</h3></div>
+          <!-- album section -->
           <div class="album-container">
             <div class="album">
               <div class="img-album-container">
@@ -87,6 +95,9 @@
               <h5>Subtitle</h5>
             </div>
           </div>
+          <!-- end album section -->
+
+          <!-- second album section -->
           <div class="mix-title">
             <h3 class="played">Creato per John Doe</h3>
             <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
@@ -94,15 +105,41 @@
           <div class="daily-album">
             <div class="daily-mix">
               <img src="img/radar.jpeg" alt="">
+              <h4>Release Radar</h4>
             </div>
             <div class="daily-mix">
               <img src="img/mixdaily.jpeg" alt="">
+              <h4>Daily Mix 1</h4>
             </div>
           </div>
-        </div>
-      </div>
+          <!-- end second album section -->
 
+          <!-- popular artists section -->
+          <div class="popular-artists">
+            <div class="mix-title">
+              <h3 class="played">Artisti più popolari</h3>
+              <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+            </div>
+            <div class="daily-album">
+              <div class="daily-mix">
+                <img src="img/youg.jpeg" alt="">
+                <h4>Lana del Rey</h4>
+              </div>
+              <div class="daily-mix">
+                <img src="img/einaudi.jpeg" alt="">
+                <h4>Ludovico Einaudi</h4>
+              </div>
+            </div>
+          </div>
+          <!-- end popular artists section -->
+        </div>
+        <!-- end right-content -->
+      </div>
+      <!-- end main content -->
+
+      <!-- footer -->
       <footer>
+        <!-- left part -->
         <div class="player-left">
           <img src="img/sinister.jpeg" alt="">
           <div class="text-player">
@@ -110,10 +147,13 @@
             <span>Brano Nome</span>
           </div>
           <div class="heart-folder-icons">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <i class="fa fa-folder-o" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-folder-o" aria-hidden="true"></i></a>
           </div>
         </div>
+        <!-- end left part -->
+
+        <!-- central part -->
         <div class="central-player">
           <div class="play-pause">
             <a href="#"><i class="fa fa-random" aria-hidden="true"></i></a>
@@ -133,18 +173,24 @@
             <span class="end-time">4:35</span>
           </div>
         </div>
+        <!-- end central part -->
+
+        <!-- right part -->
         <div class="player-right">
           <a href="#"><i class="fa fa-list" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-television" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
-          <div class="volume-bar">
+          <div class="volume-bar hidden-xs">
             <div class="volume-now">
               <div class="point">
               </div>
             </div>
           </div>
         </div>
+        <!-- end right part -->
       </footer>
+      <!-- end footer -->
     </div>
+    <!-- end wrapper -->
   </body>
 </html>
