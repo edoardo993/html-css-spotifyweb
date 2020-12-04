@@ -100,7 +100,7 @@ a:hover {
 }
 
 .scroll-y {
-  min-height: 50vh;
+  min-height: 300px;
   overflow-y: auto
 }
 /* end sidebar */
@@ -120,7 +120,7 @@ a:hover {
 .upgrade {
   position: fixed;
   width: calc(100% - 230px);
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.7);
   height: 90px;
   display: flex;
   justify-content: flex-end;
@@ -230,12 +230,14 @@ a:hover {
 /* popular artists section */
 .daily-album {
   display: flex;
-  text-align: center
+  text-align: center;
+
 }
 
 .daily-mix {
   display: inline-block;
   padding: 0 5px;
+  width: calc(100%/6)
 }
 /* end popular artists section */
 
@@ -396,8 +398,8 @@ footer .fa, .player-right .fa {
     width: calc((100% / 4) - 10px)
   }
 
-  .daily-album {
-    width: calc(100%/4 - 10px)
+  .daily-mix {
+    width: calc(100%/4)
   }
 }
 
@@ -406,8 +408,8 @@ footer .fa, .player-right .fa {
     width: calc((100% / 2) - 10px)
   }
 
-  .daily-album {
-    width: calc(100%/2 - 10px)
+  .daily-mix {
+    width: calc(100%/2)
   }
 }
 
@@ -416,8 +418,8 @@ footer .fa, .player-right .fa {
     width: calc(100%/2 - 10px)
   }
 
-  .daily-album {
-    width: calc(100%/2 - 10px)
+  .daily-mix {
+    width: calc(100%/2)
   }
 
   .hidden-xs {
