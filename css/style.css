@@ -28,6 +28,10 @@ a:hover {
   padding-left: 30px
 }
 
+.p-l-10 {
+  padding-left: 10px
+}
+
 .flex-container {
   display: flex
 }
@@ -44,6 +48,10 @@ a:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+.v-a-m {
+  vertical-align: middle;
 }
 
 .text-uppercase {
@@ -76,7 +84,8 @@ a:hover {
 }
 
 .main-nav ul li:first-child img {
-  height: 50px
+  height: 50px;
+  margin-top: 10px
 }
 
 .main-nav img {
@@ -87,6 +96,11 @@ a:hover {
   color: #ccc;
   padding: 6px 0;
   list-style-type: none
+}
+
+.scroll-y {
+  min-height: 50vh;
+  overflow-y: auto
 }
 
 .content {
@@ -163,8 +177,7 @@ a:hover {
   display: inline-block;
   width: calc(100%/6 - 10px);
   text-align: center;
-  padding: 0 5px;
-  position: relative
+  padding: 0 5px
 }
 
 .album img {
@@ -216,17 +229,21 @@ footer {
   height: 90px;
   background: #242424;
   display: flex;
+  justify-content: space-between;
 }
 
 .player-left img {
   height: 50px;
-  vertical-align: middle;
-  flex: 1
+  vertical-align: middle
 }
 
-/* .player-left  {
-  justify-content: space-between;
-} */
+.player-left {
+  line-height: 30px
+}
+
+.player-left, .player-right {
+  width: 20%
+}
 
 .text-player {
   display: inline-block;
@@ -239,47 +256,109 @@ footer {
 .central-player {
   text-align: center;
   display: inline-block;
-  flex: 4
+  width: 60%
 }
 
 footer .fa, .text-player h5, .text-player h6 {
   color: #fff
 }
 
-footer .fa, .player-right fa {
+footer .fa, .player-right .fa {
   padding: 0 10px
 }
 
-footer .fa-play-circle-o {
+.play-pause i {
+  font-size: 16px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.play-pause .fa-play-circle-o {
   font-size: 30px
 }
 
-footer i {
-  font-size: 15px
-}
-
-.play-pause i {
-  font-size: 15px;
-  color: #000;
-  vertical-align: middle;
+.play-pause .fa-play-circle-o:hover {
+  transform: scale(1.2);
 }
 
 .music-playing {
   display: inline-block;
   vertical-align: middle;
-  width: 400px;
+  width: 50%;
   height: 4px;
   border-radius: 8px;
-  background: #ccc
+  background: #5a5a5a
+}
+
+.music-playing:hover .point {
+  display: block;
 }
 
 .player-right {
-  /* text-align: right; */
-  flex: 1;
-  border: 1px solid #fff;
-  display: inline-block
+  display: inline-block;
+  line-height: 90px;
+  text-align: right;
+  padding-right: 20px
 }
 
+.progress-bar {
+  height: 4px;
+  background: #c1c1c1;
+  width: 25%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.point {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  right: 0;
+  top: 50%;
+  display: none
+}
+
+.progressing-bar span {
+  color: #A9A9A9;
+  font-weight: bold;
+  font-size: 10px
+}
+
+.progressing-bar span:first-child {
+  padding-right: 10px
+}
+
+.end-time {
+  padding-left: 10px
+}
+
+.volume-bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  height: 4px;
+  border-radius: 8px;
+  background: #5a5a5a
+}
+
+.volume-now {
+  height: 4px;
+  background: #c1c1c1;
+  width: 20%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.volume-bar:hover .point {
+  display: block;
+}
+
+.central-player div {
+  line-height: 40px
+}
 /* media query */
 @media screen and (max-width: 991px) {
   .album {
@@ -300,7 +379,7 @@ footer i {
 }
 
 @media screen and (min-width: 991px) {
- /* .album {
-   width: calc(100%/6)
- } */
+  .album {
+    width: calc(100%/6 - 10px);
+  }
 }
