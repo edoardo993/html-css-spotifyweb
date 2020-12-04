@@ -164,11 +164,12 @@ a:hover {
   width: calc(100%/6 - 10px);
   text-align: center;
   padding: 0 5px;
-  position: relative;
+  position: relative
 }
 
 .album img {
-  width: 100%
+  width: 100%;
+  vertical-align: middle;
 }
 
 .album h4, .album h5 {
@@ -211,27 +212,95 @@ a:hover {
   margin-bottom: 15px
 }
 
+footer {
+  height: 90px;
+  background: #242424;
+  display: flex;
+}
 
+.player-left img {
+  height: 50px;
+  vertical-align: middle;
+  flex: 1
+}
+
+/* .player-left  {
+  justify-content: space-between;
+} */
+
+.text-player {
+  display: inline-block;
+}
+
+.heart-folder-icons {
+  display: inline-block;
+}
+
+.central-player {
+  text-align: center;
+  display: inline-block;
+  flex: 4
+}
+
+footer .fa, .text-player h5, .text-player h6 {
+  color: #fff
+}
+
+footer .fa, .player-right fa {
+  padding: 0 10px
+}
+
+footer .fa-play-circle-o {
+  font-size: 30px
+}
+
+footer i {
+  font-size: 15px
+}
+
+.play-pause i {
+  font-size: 15px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.music-playing {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  height: 4px;
+  border-radius: 8px;
+  background: #ccc
+}
+
+.player-right {
+  /* text-align: right; */
+  flex: 1;
+  border: 1px solid #fff;
+  display: inline-block
+}
 
 /* media query */
-@media screen and (max-width: 576px) {
-
-}
-
-@media screen and (max-width: 768px) {
-  .album {
-    width: calc((100% / 2) - 10px)
-  }
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .album {
     width: calc((100% / 4) - 10px)
   }
 }
 
-@media screen and (min-width: 993px) {
- .album {
+@media screen and (max-width: 767px) {
+  .album {
+    width: calc((100% / 2) - 10px)
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .album {
+    width: calc(100%/2 - 10px);
+  }
+}
+
+@media screen and (min-width: 991px) {
+ /* .album {
    width: calc(100%/6)
- }
+ } */
 }
