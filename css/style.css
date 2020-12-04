@@ -106,10 +106,6 @@ a:hover {
 /* end sidebar */
 
 /* right-content */
-.album .fa {
-  display: none
-}
-
 .content {
   width: calc(100% - 230px);
   overflow-y: auto;
@@ -185,8 +181,51 @@ a:hover {
   display: inline-block;
   width: calc(100%/6 - 10px);
   text-align: center;
-  margin: 0 5px;
+  margin: 0 5px
+}
+
+.img-album-container {
   position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%
+}
+
+.popular-artists .daily-mix .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%
+}
+
+.img-album-container .fa {
+  position: absolute;
+  font-size: 100px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%
+}
+
+.img-album-container:hover .overlay {
+  display: block
 }
 
 .album img {
