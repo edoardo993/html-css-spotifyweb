@@ -76,11 +76,10 @@ a:hover {
   background: #000;
   padding: 0 15px;
   flex-direction: column;
-  justify-content: space-between;
   display: flex
 }
 
-.main-nav ul li:first-child img {
+.logo a img {
   height: 50px;
   margin-top: 10px
 }
@@ -88,6 +87,10 @@ a:hover {
 .scroll-y ul {
   height: 45vh;
   overflow-y: auto
+}
+
+.small-logo {
+  display: none
 }
 
 .main-nav img {
@@ -100,7 +103,7 @@ a:hover {
   list-style-type: none
 }
 
-.flex-container ul {
+.flex-container ul, .main-nav {
   justify-content: space-between;
 }
 /* end sidebar */
@@ -159,12 +162,11 @@ a:hover {
   color: #676A6E
 }
 
-.main-nav-right a:hover {
+.main-nav-right a:hover, .played {
   color: #fff
 }
 
 .played {
-  color: #fff;
   font-size: 25px;
   margin: 20px 0;
   padding-left: 20px
@@ -251,10 +253,6 @@ a:hover {
   max-width: 300px
 }
 
-.mix-title {
-  color: #fff
-}
-
 .mix-title h5 {
   font-size: 14px;
   color: #676A6E;
@@ -285,7 +283,12 @@ footer {
   justify-content: space-between;
 }
 
-footer .fa, .text-player h5, .text-player h6 {
+footer .fa,
+.text-player h5,
+.text-player h6,
+.mix-title,
+.text-player span:first-child,
+.heart-folder-icons .fa:hover {
   color: #fff
 }
 
@@ -297,38 +300,37 @@ footer .fa, .player-right .fa {
 /* left part */
 .player-left img {
   height: 50px;
-  vertical-align: middle
-}
-
-.text-player span:first-child {
-  color: #fff
+  vertical-align: middle;
+  margin: 0 10px
 }
 
 .text-player span:nth-child(2) {
   color: #656565
 }
-.player-left {
-  line-height: 30px
-}
 
-.player-left, .player-right {
-  width: 20%
+.text-player span {
+  font-size: 18px
 }
 
 .text-player {
-  display: inline-block;
+  line-height: 16px
 }
 
-.heart-folder-icons {
+.player-left {
+  line-height: 30px;
+  border: 1px solid #fff
+}
+
+.player-left, .player-right {
+  width: 25%
+}
+
+.text-player, .heart-folder-icons {
   display: inline-block;
 }
 
 .heart-folder-icons .fa {
   color: #65686C
-}
-
-.heart-folder-icons .fa:hover {
-  color: #fff
 }
 /* end left part */
 
@@ -336,7 +338,8 @@ footer .fa, .player-right .fa {
 .central-player {
   text-align: center;
   display: inline-block;
-  width: 60%
+  width: 50%;
+  border: 1px solid #fff
 }
 
 .central-player div {
@@ -410,13 +413,14 @@ footer .fa, .player-right .fa {
   display: inline-block;
   line-height: 90px;
   text-align: right;
-  padding-right: 20px
+  padding-right: 20px;
+  border: 1px solid #fff
 }
 
 .volume-bar {
   display: inline-block;
   vertical-align: middle;
-  width: 20%;
+  min-width: 20%;
   height: 4px;
   border-radius: 8px;
   background: #5A5A5A
@@ -456,6 +460,14 @@ footer .fa, .player-right .fa {
   .daily-mix {
     width: calc(100%/2)
   }
+
+  .upgrade a {
+    padding: 6px 30px
+  }
+
+  .player-right {
+    padding-right: 5px
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -472,12 +484,50 @@ footer .fa, .player-right .fa {
     display: none
   }
 
+  .small-logo {
+    display: block;
+    margin-top: 10px
+  }
+
   .main-nav-right {
     margin-top: 20px
   }
 
   .main-nav-right li {
     font-size: 10px
+  }
+
+  .played {
+    font-size: 20px
+  }
+
+  .img-album-container .fa {
+    font-size: 60px
+  }
+
+  .main-nav {
+    width: 50px
+  }
+
+  .content {
+    width: calc(100% - 50px)
+  }
+
+  .player-right {
+    padding-right: 5px;
+    text-align: left
+  }
+
+  footer .fa, .player-right .fa {
+    padding: 0 5px
+  }
+
+  .player-left img {
+    height: 40px
+  }
+
+  .text-player span {
+    font-size: 13px
   }
 }
 
