@@ -292,7 +292,8 @@ footer .fa,
   color: #fff
 }
 
-footer .fa, .player-right .fa {
+/* footer .fa, */
+.player-right .fa {
   padding: 0 10px
 }
 /* end footer */
@@ -304,12 +305,15 @@ footer .fa, .player-right .fa {
   margin: 0 10px
 }
 
-.text-player span:nth-child(2) {
-  color: #656565
+.frst-txt {
+  font-weight: bold;
+  font-size: 15px
 }
 
-.text-player span {
-  font-size: 18px
+.scnd-txt {
+  color: #797979;
+  font-weight: bold;
+  font-size: 15px
 }
 
 .text-player {
@@ -317,8 +321,7 @@ footer .fa, .player-right .fa {
 }
 
 .player-left {
-  line-height: 30px;
-  border: 1px solid #fff
+  line-height: 30px
 }
 
 .player-left, .player-right {
@@ -338,8 +341,7 @@ footer .fa, .player-right .fa {
 .central-player {
   text-align: center;
   display: inline-block;
-  width: 50%;
-  border: 1px solid #fff
+  width: 50%
 }
 
 .central-player div {
@@ -350,6 +352,7 @@ footer .fa, .player-right .fa {
   font-size: 16px;
   color: #fff;
   vertical-align: middle;
+  padding: 0 5px
 }
 
 .play-pause .fa-play-circle-o {
@@ -413,8 +416,7 @@ footer .fa, .player-right .fa {
   display: inline-block;
   line-height: 90px;
   text-align: right;
-  padding-right: 20px;
-  border: 1px solid #fff
+  padding-right: 20px
 }
 
 .volume-bar {
@@ -468,9 +470,17 @@ footer .fa, .player-right .fa {
   .player-right {
     padding-right: 5px
   }
+
+  footer .fa, .player-right .fa {
+    padding: 0 5px
+  }
 }
 
 @media screen and (max-width: 575px) {
+  .content {
+    width: calc(100% - 50px)
+  }
+
   .album {
     width: calc(100%/2 - 10px);
     margin-bottom: 15px
@@ -509,13 +519,9 @@ footer .fa, .player-right .fa {
     width: 50px
   }
 
-  .content {
-    width: calc(100% - 50px)
-  }
-
   .player-right {
     padding-right: 5px;
-    text-align: left
+    /* text-align: left */
   }
 
   footer .fa, .player-right .fa {
@@ -528,6 +534,10 @@ footer .fa, .player-right .fa {
 
   .text-player span {
     font-size: 13px
+  }
+
+  .player-left img {
+    margin: 0 5px
   }
 }
 
